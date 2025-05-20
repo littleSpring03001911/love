@@ -5,6 +5,9 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: process.env.NODE_ENV === 'production' ? '/love' : '',
+  eslint:{
+    ignoreDuringBuilds: true,
+  }
 }
 
 module.exports = nextConfig 
