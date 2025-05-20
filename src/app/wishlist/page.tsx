@@ -76,6 +76,7 @@ const wishes: Wish[] = [
     emoji: '✨',
     completed: false
   }
+  
 ];
 
 export default function Wishlist() {
