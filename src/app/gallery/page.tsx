@@ -17,12 +17,15 @@ interface Media {
   height?: number;
 }
 
+// 获取前缀，适配本地和GitHub Pages
+const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/love') ? '/love' : '';
+
 // 静态媒体数据
 const mediaItems: Media[] = [
   // 日常相处
   {
     id: '1',
-    url: '/photos/img2.jpg',
+    url: `${prefix}/photos/img2.jpg`,
     title: '第一条朋友圈',
     date: '2024',
     description: '我们在一起了',
@@ -32,7 +35,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '2',
-    url: '/photos/img3.jpg',
+    url: `${prefix}/photos/img3.jpg`,
     title: '成就感满满',
     date: '2024-01-15',
     description: '在咖啡厅的甜蜜时光',
@@ -42,7 +45,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '3',
-    url: '/photos/img4.jpg',
+    url: `${prefix}/photos/img4.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -52,7 +55,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '4',
-    url: '/photos/img5.jpg',
+    url: `${prefix}/photos/img5.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -62,7 +65,7 @@ const mediaItems: Media[] = [
   },              
   {
     id: '5',
-    url: '/photos/img6.jpg',
+    url: `${prefix}/photos/img6.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -72,7 +75,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '6',
-    url: '/photos/img7.jpg',  
+    url: `${prefix}/photos/img7.jpg`,  
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -82,7 +85,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '7',
-    url: '/photos/img8.PNG',
+    url: `${prefix}/photos/img8.PNG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -92,7 +95,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '8',
-    url: '/photos/img9.jpg',
+    url: `${prefix}/photos/img9.jpg`,
     title: '花花',  
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -102,7 +105,7 @@ const mediaItems: Media[] = [
   }, 
   {
     id: '9',
-    url: '/photos/img10.jpg',
+    url: `${prefix}/photos/img10.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -112,7 +115,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '10',
-    url: '/photos/img11.jpg',
+    url: `${prefix}/photos/img11.jpg`,
     title: '花花',    
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -122,7 +125,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '11',
-    url: '/photos/img12.jpg',
+    url: `${prefix}/photos/img12.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -132,7 +135,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '12',
-    url: '/photos/img13.jpg', 
+    url: `${prefix}/photos/img13.jpg`, 
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -142,7 +145,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '13',
-    url: '/photos/img14.jpg',
+    url: `${prefix}/photos/img14.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -152,7 +155,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '14',
-    url: '/photos/img15.jpg',
+    url: `${prefix}/photos/img15.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -162,7 +165,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '15',
-    url: '/photos/img17.jpg',
+    url: `${prefix}/photos/img17.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -172,7 +175,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '16',
-    url: '/photos/img18.jpg',
+    url: `${prefix}/photos/img18.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -182,7 +185,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '17',
-    url: '/photos/img19.PNG',
+    url: `${prefix}/photos/img19.PNG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -192,7 +195,7 @@ const mediaItems: Media[] = [
   },    
   {
     id: '18',
-    url: '/photos/img21.PNG',
+    url: `${prefix}/photos/img21.PNG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -202,7 +205,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '19',
-    url: '/photos/img22.PNG',
+    url: `${prefix}/photos/img22.PNG`,
     title: '哥哥',
     date: '2024-02-01',
     description: '一起去看海',
@@ -212,7 +215,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '20',
-    url: '/photos/img23.PNG',
+    url: `${prefix}/photos/img23.PNG`,
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -222,7 +225,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '21',
-    url: '/photos/img24.jpg',
+    url: `${prefix}/photos/img24.jpg`,
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -232,7 +235,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '22',
-    url: '/photos/img25.jpg', 
+    url: `${prefix}/photos/img25.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -242,7 +245,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '24',
-    url: '/photos/img80.jpg', 
+    url: `${prefix}/photos/img80.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -252,7 +255,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '25',
-    url: '/photos/img81.jpg', 
+    url: `${prefix}/photos/img81.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -262,7 +265,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '26',
-    url: '/photos/img82.jpg', 
+    url: `${prefix}/photos/img82.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -272,7 +275,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '27',
-    url: '/photos/img83.jpg', 
+    url: `${prefix}/photos/img83.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -282,7 +285,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '28',
-    url: '/photos/img84.jpg', 
+    url: `${prefix}/photos/img84.jpg`, 
     title: '黄山gogogo',  
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -292,7 +295,7 @@ const mediaItems: Media[] = [
   },  
   {
     id: '29',
-    url: '/photos/img85.jpg', 
+    url: `${prefix}/photos/img85.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02',     
     description: '一起度过的美好时光',
@@ -302,7 +305,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '34',
-    url: '/photos/img90.jpg', 
+    url: `${prefix}/photos/img90.jpg`, 
     title: '黄山gogogo',  
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -312,7 +315,7 @@ const mediaItems: Media[] = [
   },      
   {
     id: '35',
-    url: '/photos/img91.jpg', 
+    url: `${prefix}/photos/img91.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02', 
     description: '一起度过的美好时光',
@@ -324,7 +327,7 @@ const mediaItems: Media[] = [
   // 旅行相册
   ...Array.from({ length: 26 }, (_, i) => ({
     id: `travel-${i + 1}`,
-    url: `/photos/img${27 + i}.jpg`,
+    url: `${prefix}/photos/img${27 + i}.jpg`,
     title: '旅行记录',
     date: '2024-10-02',
     description: '我们的旅行时光',
@@ -334,7 +337,7 @@ const mediaItems: Media[] = [
   })),
   {
     id: '30',
-    url: '/photos/img16.jpg', 
+    url: `${prefix}/photos/img16.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02', 
     description: '一起度过的美好时光',
@@ -344,7 +347,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '31',
-    url: '/photos/img20.jpg', 
+    url: `${prefix}/photos/img20.jpg`, 
     title: '黄山gogogo',
     date: '2024-10-02', 
     description: '一起度过的美好时光',
@@ -355,7 +358,7 @@ const mediaItems: Media[] = [
   // 视频分组
   {
     id: '1',
-    url: '/videos/video4.mp4',
+    url: `${prefix}/videos/video4.mp4`,
     title: '我们的第一个视频',
     date: '2024.06.02----',
     description: '记录美好时刻',
@@ -365,7 +368,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '3',
-    url: '/videos/video2.mp4',
+    url: `${prefix}/videos/video2.mp4`,
     title: '我们的第一个视频',
     date: '2024-02-01',
     description: '记录美好时刻',
@@ -375,7 +378,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '4',
-    url: '/videos/video1.mp4',
+    url: `${prefix}/videos/video1.mp4`,
     title: '黄山之旅',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -385,7 +388,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '5',
-    url: '/videos/video5.mp4',
+    url: `${prefix}/videos/video5.mp4`,
     title: '我们的第一个视频',
     date: '2024-02-01',
     description: '记录美好时刻',
@@ -395,7 +398,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '6',
-    url: '/videos/video6.mp4',
+    url: `${prefix}/videos/video6.mp4`,
     title: '黄山之旅',
     date: '2024-10-02',
     description: '一起度过的美好时光',
@@ -405,7 +408,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '7',
-    url: '/videos/video7.mp4',
+    url: `${prefix}/videos/video7.mp4`,
     title: '我们的第一个视频',
     date: '2024-02-01',
     description: '记录美好时刻',
@@ -415,7 +418,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '8',
-    url: '/videos/video8.mp4',
+    url: `${prefix}/videos/video8.mp4`,
     title: '我们的第一个视频',
     date: '2024-02-01',
     description: '记录美好时刻',
@@ -425,7 +428,7 @@ const mediaItems: Media[] = [
   }, 
   {
     id: '9',
-    url: '/videos/video9.mp4',
+    url: `${prefix}/videos/video9.mp4`,
     title: '我们的第一个视频',
     date: '2024-02-01',
     description: '记录美好时刻',
@@ -437,7 +440,7 @@ const mediaItems: Media[] = [
   // 订婚相册
   ...Array.from({ length: 22 }, (_, i) => ({
     id: `engagement-${i + 1}`,
-    url: `/photos/img${53 + i}.jpg`,
+    url: `${prefix}/photos/img${53 + i}.jpg`,
     title: '订婚相册',
     date: '2024-12-07',
     description: '我们的订婚时刻',

@@ -14,39 +14,41 @@ interface Photo {
   description: string;
 }
 
+const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/love') ? '/love' : '';
+
 // 固定的五张重要照片
 const importantPhotos: Photo[] = [
   {
     id: '1',
-    url: '/photos/img7.jpg',
+    url: `${prefix}/photos/img7.jpg`,
     title: '第一条朋友圈',
     date: '2024-01-01',
     description: '我们的第一次相遇'
   },
   {
     id: '2',
-    url: '/photos/img20.jpg',
+    url: `${prefix}/photos/img20.jpg`,
     title: '成就感满满',
     date: '2024-01-15',
     description: '在咖啡厅的甜蜜时光'
   },
   {
     id: '3',
-    url: '/photos/img15.jpg',
+    url: `${prefix}/photos/img15.jpg`,
     title: '哥哥',
     date: '2024-02-01',
     description: '一起去看海'
   },
   {
     id: '4',
-    url: '/photos/img4.jpg',
+    url: `${prefix}/photos/img4.jpg`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐'
   },
   {
     id: '5',
-    url: '/photos/img16.jpg',
+    url: `${prefix}/photos/img16.jpg`,
     title: '黄山gogogo',
     date: '2024-10-02',
     description: '一起度过的美好时光'
