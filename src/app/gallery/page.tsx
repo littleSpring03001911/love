@@ -65,7 +65,7 @@ const mediaItems: Media[] = [
   },              
   {
     id: '5',
-    url: `${prefix}/photos/img6.jpg`,
+    url: `${prefix}/photos/img6.JPG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -75,7 +75,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '6',
-    url: `${prefix}/photos/img7.jpg`,  
+    url: `${prefix}/photos/img7.JPG`,  
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -95,7 +95,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '8',
-    url: `${prefix}/photos/img9.jpg`,
+    url: `${prefix}/photos/img9.JPG`,
     title: '花花',  
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -105,7 +105,7 @@ const mediaItems: Media[] = [
   }, 
   {
     id: '9',
-    url: `${prefix}/photos/img10.jpg`,
+    url: `${prefix}/photos/img10.JPG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -115,7 +115,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '10',
-    url: `${prefix}/photos/img11.jpg`,
+    url: `${prefix}/photos/img11.JPG`,
     title: '花花',    
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -125,7 +125,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '11',
-    url: `${prefix}/photos/img12.jpg`,
+    url: `${prefix}/photos/img12.JPG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -135,7 +135,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '12',
-    url: `${prefix}/photos/img13.jpg`, 
+    url: `${prefix}/photos/img13.JPG`, 
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -145,7 +145,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '13',
-    url: `${prefix}/photos/img14.jpg`,
+    url: `${prefix}/photos/img14.JPG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -165,7 +165,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '15',
-    url: `${prefix}/photos/img17.jpg`,
+    url: `${prefix}/photos/img17.JPG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
@@ -175,7 +175,7 @@ const mediaItems: Media[] = [
   },
   {
     id: '16',
-    url: `${prefix}/photos/img18.jpg`,
+    url: `${prefix}/photos/img18.JPG`,
     title: '花花',
     date: '2024-02-14',
     description: '浪漫的晚餐',
