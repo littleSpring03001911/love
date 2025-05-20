@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Love Story Website
 
-## Getting Started
+一个记录爱情故事的网站，包含相册、愿望清单、纪念日等功能。
 
-First, run the development server:
+## 功能特点
 
+- 首页展示重要照片和计时器
+- 相册页面展示所有照片和视频
+- 愿望清单记录未来计划
+- 纪念日页面记录重要日期
+- 时间轴展示重要时刻
+- AI 聊天助手提供互动体验
+
+## 本地开发
+
+1. 克隆项目
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/你的用户名/love.git
+cd love
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 安装依赖
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 运行开发服务器
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. 打开浏览器访问 http://localhost:3000
 
-## Learn More
+## 部署说明
 
-To learn more about Next.js, take a look at the following resources:
+本项目使用 GitHub Pages 进行部署。每次推送到 main 分支时，GitHub Actions 会自动构建并部署网站。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 部署步骤
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Fork 这个仓库到你的 GitHub 账号
 
-## Deploy on Vercel
+2. 在仓库设置中启用 GitHub Pages：
+   - 进入仓库的 Settings 页面
+   - 找到 Pages 选项
+   - 在 Source 中选择 "GitHub Actions"
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. 推送代码到 main 分支，GitHub Actions 会自动部署
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. 部署完成后，你的网站将可以通过 `https://你的用户名.github.io/love` 访问
+
+## 技术栈
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## 许可证
+
+MIT
