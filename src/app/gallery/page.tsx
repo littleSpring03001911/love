@@ -18,7 +18,7 @@ interface Media {
 }
 
 // 获取前缀，适配本地和GitHub Pages
-const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/love') ? '/love' : '';
+const prefix = process.env.NODE_ENV === 'production' ? '/love' : '';
 
 // 静态媒体数据
 const mediaItems: Media[] = [

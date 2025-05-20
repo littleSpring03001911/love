@@ -7,9 +7,9 @@ import { HomeIcon, PhotoIcon, CalendarIcon, HeartIcon, ListBulletIcon } from '@h
 const navigation = [
   { name: 'OurHouse', href: '/', icon: HomeIcon },
 //   { name: '这一路', href: '/timeline', icon: CalendarIcon },
-  { name: '都好看', href: '/gallery', icon: PhotoIcon },
-  { name: '好日子', href: '/anniversary', icon: HeartIcon },
-  { name: '好多事要做', href: '/wishlist', icon: ListBulletIcon },
+  { name: '这些照片', href: '/gallery', icon: PhotoIcon },
+  { name: '这些日子', href: '/anniversary', icon: HeartIcon },
+  { name: '那些事', href: '/wishlist', icon: ListBulletIcon },
 ];
 
 export default function Navbar() {

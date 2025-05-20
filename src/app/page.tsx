@@ -14,13 +14,13 @@ interface Photo {
   description: string;
 }
 
-const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/love') ? '/love' : '';
+const prefix = process.env.NODE_ENV === 'production' ? '/love' : '';
 
 // 固定的五张重要照片
 const importantPhotos: Photo[] = [
   {
     id: '1',
-    url: `${prefix}/photos/img7.JPG`,
+    url: `${prefix}/photos/img7.jpg`,
     title: '第一条朋友圈',
     date: '2024-01-01',
     description: '我们的第一次相遇'
