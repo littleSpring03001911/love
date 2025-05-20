@@ -141,6 +141,7 @@ export default function Home() {
                 src={importantPhotos[0].url}
                 alt={importantPhotos[0].title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
                 <h3 className="text-sm font-semibold">{importantPhotos[0].title}</h3>
@@ -160,6 +161,7 @@ export default function Home() {
                 src={importantPhotos[1].url}
                 alt={importantPhotos[1].title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
                 <h3 className="text-sm font-semibold">{importantPhotos[1].title}</h3>
@@ -179,6 +181,7 @@ export default function Home() {
                 src={importantPhotos[2].url}
                 alt={importantPhotos[2].title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
                 <h3 className="text-sm font-semibold">{importantPhotos[2].title}</h3>
@@ -198,6 +201,7 @@ export default function Home() {
                 src={importantPhotos[3].url}
                 alt={importantPhotos[3].title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
                 <h3 className="text-sm font-semibold">{importantPhotos[3].title}</h3>
@@ -217,6 +221,7 @@ export default function Home() {
                 src={importantPhotos[4].url}
                 alt={importantPhotos[4].title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
                 <h3 className="text-sm font-semibold">{importantPhotos[4].title}</h3>
